@@ -1,13 +1,13 @@
-<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1654312197982" stop="1654312197997">
-  <name>test_f</name>
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1654366746798" stop="1654366754883">
+  <name>test_s</name>
   <labels/>
   <test-cases>
-    <test-case start="1654312197982" status="passed" stop="1654312197997">
-      <name>test_first</name>
+    <test-case start="1654366746798" status="passed" stop="1654366754883">
+      <name>test_sec</name>
       <attachments/>
       <labels>
         <label name="severity" value="normal"/>
-        <label name="thread" value="13408-MainThread"/>
+        <label name="thread" value="7840-MainThread"/>
         <label name="host" value="LAPTOP-KKOEBFM8"/>
         <label name="framework" value="pytest"/>
         <label name="language" value="cpython3"/>
