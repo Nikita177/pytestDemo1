@@ -18,7 +18,8 @@ Unzip the directory and put the path of bin to PATH in environment variables
 pip install allure-pytest or pip install pytest-allure-adaptor
 
 How to configure jenkins
-Manage Jenkins -> Manage Plugins -> Python and Allure Also add Allure commandline path in Global Tools Configuration
+Manage Jenkins -> Manage Plugins -> Python and Allure Also add Allure comma
+ndline path in Global Tools Configuration
 
 How to setup PyCharm
 Install plugins in Pycharm explicitly for pytest, selenium and allure
