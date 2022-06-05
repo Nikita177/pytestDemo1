@@ -6,7 +6,7 @@ def test_sec():
     from selenium import webdriver
     from selenium.webdriver.common.keys import Keys
 
-    driver = webdriver.Chrome(r"C:\\Users\\Nikita\\Documents\\chromedriver_win32\\chromedriver.exe")
+    driver = webdriver.Chrome(r"C:\\chromedriver_win32\\chromedriver.exe")
     driver.get("https://www.google.com/")
     driver.maximize_window()
     driver.find_element_by_name("q").send_keys("LinkedIn login")
