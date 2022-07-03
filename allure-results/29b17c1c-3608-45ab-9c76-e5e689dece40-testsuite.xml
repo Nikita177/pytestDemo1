@@ -1,0 +1,50 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1656645249847" stop="1656645249918">
+  <name>test_fixtures</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1656645249847" status="broken" stop="1656645249863">
+      <name>TestExample2.test_payload</name>
+      <failure>
+        <message>FixtureLookupError: ('setup  ', &lt;FixtureRequest for &lt;Function test_payload&gt;&gt;)</message>
+        <stack-trace>file C:\Users\Nikita\PycharmProjects\pytestDemo\test_fixtures.py, line 8
+      def test_payload(self,payload):
+E       fixture 'setup  ' not found
+&gt;       available fixtures: _pytest_bdd_example, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, payload, pytestbdd_given_trace, pytestbdd_then_trace, pytestbdd_when_trace, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, setup, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+&gt;       use 'pytest --fixtures [testpath]' for help on them.
+
+C:\Users\Nikita\PycharmProjects\pytestDemo\test_fixtures.py:8</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="17212-MainThread"/>
+        <label name="host" value="LAPTOP-KKOEBFM8"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1656645249894" status="broken" stop="1656645249918">
+      <name>TestExample2.test_fix</name>
+      <failure>
+        <message>FixtureLookupError: ('setup  ', &lt;FixtureRequest for &lt;Function test_fix&gt;&gt;)</message>
+        <stack-trace>file C:\Users\Nikita\PycharmProjects\pytestDemo\test_fixtures.py, line 11
+      def test_fix(self):
+E       fixture 'setup  ' not found
+&gt;       available fixtures: _pytest_bdd_example, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, monkeypatch, payload, pytestbdd_given_trace, pytestbdd_then_trace, pytestbdd_when_trace, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, setup, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+&gt;       use 'pytest --fixtures [testpath]' for help on them.
+
+C:\Users\Nikita\PycharmProjects\pytestDemo\test_fixtures.py:11</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="17212-MainThread"/>
+        <label name="host" value="LAPTOP-KKOEBFM8"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

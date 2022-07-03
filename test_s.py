@@ -1,21 +1,18 @@
 import pytest
 import allure
-
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
 
 def test_sec():
-    from selenium import webdriver
-    from selenium.webdriver.common.keys import Keys
 
-    driver = webdriver.Chrome(r"C:\\chromedriver_win32\\chromedriver.exe")
-    driver.get("https://www.google.com/")
+    driver = webdriver.Chrome(executable_path="C:\\chromedriver_win32\\chromedriver.exe")
+   # driver = webdriver.Chrome(ChromeDriverManager.install())
+    driver.get("https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp")
     driver.maximize_window()
-    driver.find_element_by_name("q").send_keys("LinkedIn login")
-    driver.find_element_by_name("btnK").click()
-    driver.find_element_by_partial_link_text("LinkedIn Login").click()
-    driver.find_element_by_id("username").send_keys("nikita")
-    driver.find_element_by_id("password").send_keys("p")
-    driver.find_element_by_tag_name("button").click()
-    print(driver.title)
+    driver.find_element(By.ID,'firstName').send_keys("Nikita")
+    name=driver.title
     print(driver.current_url)
     driver.close()
-# assert name in title
+    assert name in "Create your Google Account"
